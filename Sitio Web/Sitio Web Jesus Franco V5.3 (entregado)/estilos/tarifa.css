@@ -1,0 +1,135 @@
+/* detalles generales */
+
+body
+{
+  background-color: black;
+  color: red;
+  text-align: center;
+  width: 850px;
+  font-family: Arial, sans-serif;
+  margin: 0px auto;
+  padding: 0 1em 1em 1em;
+}
+
+/* Fijamos anchura y altura para las cajas principales */
+#cabecera
+{
+  width: 850px;
+  height: 185px;
+}
+
+#cuerpo
+{
+  width: 850px;
+  height: 600px;
+}
+
+#pie
+{
+  width: 850px;
+  height: 70px;
+}
+/* Pintamos la línea que antes haciamos con <hr>*/
+#logo
+{
+  border-bottom: 2px solid red;
+}
+
+/* para respetar los espacios en blanco del logo y titulo */
+h1, h2
+{
+  white-space: pre;
+}
+
+/* Para el color del titular */
+h2
+{
+  color: yellow;
+}
+
+/* ponemos las iniciales el doble de grandes */
+.inic
+{
+  font: bold 2em Arial, sans-serif;
+}
+
+/* y los enlaces para cambiar de idioma */
+.eng a
+{
+  border: none;
+  background: url(../imagenes/UK32.png) no-repeat center;
+}
+.fra a
+{
+  border: none;
+  background: url(../imagenes/France32.png) no-repeat center;
+}
+.esp a
+{
+  border: none;
+  background: url(../imagenes/Spain32.png) no-repeat center;
+}
+.eng a:hover, .fra a:hover, .esp a:hover
+{
+  font-size: 1em;
+}
+
+/* arreglamos el texto del pie */
+#pie
+{
+  font: bold 1.5em Times new roman;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+}
+/* El enlace en amarillo y con subrayado fino celeste*/
+a
+{
+  color: yellow;
+  text-decoration: none;
+  border-bottom: thin dashed aqua;
+}
+
+/* y que cambie de color y tamaño cuando te pongas encima */
+a:hover
+{
+  color: fuchsia;
+  border-bottom: none;
+  font-size: 1.2em;
+}
+
+/* Ahora vamos con la tabla */
+table
+{
+  background-color: aqua;
+  color: purple;
+  text-align: center;
+  font: bold .9em arial;
+  caption-side: top;
+  border: 5px solid blue;
+  width: 700px;
+  margin: 1em 5em;
+  border-spacing: 6px;
+}
+caption
+{
+  color: aqua;
+  margin-top: 3em;
+  margin-bottom: 15px;
+  font: bold 1em arial;
+}
+th
+{
+  background-color: purple;
+  font-size: 1.1em;
+  color: aqua;
+}
+td
+{
+  border: 2px solid purple;
+}
+/* y para resaltarlo cuando te poses con el puntero */
+td:hover
+{
+  background-color: blue;
+  color: aqua;
+}

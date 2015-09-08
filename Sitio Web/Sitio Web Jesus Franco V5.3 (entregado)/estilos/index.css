@@ -1,0 +1,85 @@
+/* detalles generales */
+
+body
+{
+  background-color: black;
+  color: red;
+  text-align: center;
+  width: 800px;
+  font-family: Arial, sans-serif;
+  margin: 0px auto;
+  padding: 0 1em 1em 1em;
+}
+
+/* para respetar los espacios en blanco del titulo */
+
+h1
+{
+  white-space: pre;
+}
+
+/* ponemos las iniciales el doble de grandes */
+
+.inic
+{
+  font: bold 2em Arial, sans-serif;
+}
+
+/* el titular amarillo y espaciado */
+
+h2
+{
+  color: yellow;
+  word-spacing: .3em;
+  letter-spacing: .2em;
+}
+
+/* y con la primera letra un poco más grande */
+
+h2:first-letter
+{
+  font-size: 2.3em;
+}
+
+/* Quitamos el borde del mapa de imagen */
+img 
+{
+  border: none;
+}
+
+/* Los enlaces en morado, sin subrayado y un poco más grande */
+
+a
+{
+  color: purple;
+  text-decoration: none;
+  font: bold 1.4em arial;
+}
+
+/* y que cambie de color cuando te pongas encima */
+a:hover
+{
+  color: fuchsia;
+  font: bold 1.6em arial;
+}
+/* y una parte en mayúsculas y espaciado */
+
+.gran
+{
+  text-transform: uppercase;
+  letter-spacing: .4em;
+}
+
+/* Vamos a personalizar un poco los enlaces */
+.esp a
+{
+  background: url(../imagenes/Spain32.png) no-repeat left;
+}
+.eng a
+{
+  background: url(../imagenes/UK32.png) no-repeat left;
+}
+.fra a
+{
+  background: url(../imagenes/France32.png) no-repeat left;
+}

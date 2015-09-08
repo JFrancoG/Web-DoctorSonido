@@ -1,0 +1,249 @@
+/* detalles generales */
+
+body
+{
+  background-color: black;
+  color: red;
+  width: 880px;
+  font-family: Arial, sans-serif;
+  margin: 0px auto;
+  padding: 0 1em 1em 1em;
+}
+
+/* Fijamos anchura y altura para las cajas principales */
+#cabecera
+{
+  width: 880px;
+  height: 185px;
+}
+
+#cuerpo
+{
+  width: 880px;
+  height: 950px;
+}
+
+#pie
+{
+  width: 850px;
+  height: 70px;
+}
+
+/* Pintamos la línea que antes haciamos con <hr>*/
+#logo
+{
+  border-bottom: 2px solid red;
+}
+
+/* para respetar los espacios en blanco y centrar el logo, titulo y la clase espacio */
+h1, h2, .espacio
+{
+  white-space: pre;
+  text-align: center;
+}
+
+/* Para el color del titular */
+h2
+{
+  color: yellow;
+}
+
+/* ponemos las iniciales el doble de grandes */
+.inic
+{
+  font: bold 2em Arial, sans-serif;
+}
+
+/* y los enlaces para cambiar de idioma */
+.eng a
+{
+  border: none;
+  background: url(../imagenes/UK32.png) no-repeat center;
+}
+.fra a
+{
+  border: none;
+  background: url(../imagenes/France32.png) no-repeat center;
+}
+.esp a
+{
+  border: none;
+  background: url(../imagenes/Spain32.png) no-repeat center;
+}
+.eng a:hover, .fra a:hover, .esp a:hover
+{
+  font-size: 1em;
+}
+
+/* arreglamos el texto del pie */
+#pie
+{
+  font: bold 1.5em Times new roman;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  text-align: center;
+}
+/* El enlace en amarillo y con subrayado fino celeste*/
+a
+{
+  color: yellow;
+  text-decoration: none;
+  border-bottom: thin dashed aqua;
+}
+
+/* y que cambie de color y tamaño cuando te pongas encima */
+a:hover
+{
+  color: fuchsia;
+  border-bottom: none;
+  font-size: 1.2em;
+}
+
+/* Ahora vamos con el formulario y sus elementos */
+form
+{
+  margin: 2em 5.5em;
+}
+legend
+{
+  color: aqua;
+  font: bold 1.1em arial;
+}
+
+/* Para que todas las cajas tengan el mismo aspecto */
+input, #provincia, #dia, #mes, #year, #prof, #temas
+{
+  border: 3px outset grey;
+  padding: .3em;
+  background-color: #FF8;
+  color: red;
+}
+/* y las resaltamos cuando tengan el foco */
+input:focus, #provincia:focus, #dia:focus, #mes:focus, #year:focus, #prof:focus, #temas:focus
+{
+  background-color: yellow;
+  border: 3px outset lime;
+}
+
+/* Le ponemos padding a las label también para que se situen a la misma altura de las cajas */
+label
+{
+  padding: .3em;
+}
+/* La clase etiq la hemos creado para que se alineen todas las cajas a la misma altura
+   con un mismo margen */
+.etiq
+{
+  margin: .7em 1em;
+}
+.etiq label
+{
+  width: 170px;
+  float: left;
+}
+/* el checkbox hay que hacerlo aparte porque no tiene label */
+.etiq #check
+{
+  margin-left: 180px;
+  margin-top: 1em;
+}
+
+/* Ahora vamos caja a caja dando anchuras precisas para que se vea lo mejor
+   posible, esteticamente hablando */
+#nombre, #apellidos, #email
+{
+  width: 440px;
+}
+#dia
+{
+  width: 75px;
+}
+#mes
+{
+  width: 185px;
+}
+#year
+{
+  width: 93px;
+}
+#pass
+{
+  width: 220px;
+}
+#provincia
+{
+  width: 232px;
+}
+/* Esta es la tabla donde se ha metido el sexo */
+table legend
+{
+  font: normal .9em arial;
+  color: lime;
+}
+#sexo
+{
+  padding: 1em 0.5em;
+  border: none;
+  background-color: #000;
+}
+
+#prof
+{
+  width: 232px;
+}
+
+#temas
+{
+  width: 440px;
+  height: 60px;
+}
+/* La foto se comporta de muy diferentes maneras según el navegador */
+#foto
+{
+  width: 440px;
+}
+/* Como hay navegadores donde no coge el foco le pongo un efecto similar cuando
+   se pasa el puntero del ratón por encima */
+#foto:hover
+{
+  border: 3px outset lime;
+  background-color: yellow; 
+}
+/* Al checkbox le pasa algo parecido */
+#check
+{
+  border: 3px outset grey;
+}
+#check:hover
+{
+  border: 3px outset lime;
+  background-color: yellow;
+}
+
+#textcheck
+{
+  font-size: .9em;
+}
+/* Al botón de limpiar el formulario le damos unos atributos acordes 
+   con el resto del formulario */
+#borrar
+{
+  border: 3px outset grey;
+  margin: 0 180px;
+  padding: .5em;
+  letter-spacing: .3em;
+  font: bold .8em arial;
+}
+#borrar:hover
+{
+  background-color: yellow;
+  border: 3px outset lime;
+}
+
+#enviar
+{
+  margin: 1em 275px;
+  background-color: #000;
+  border: none;
+}
+  

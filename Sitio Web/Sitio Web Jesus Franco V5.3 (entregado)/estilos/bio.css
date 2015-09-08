@@ -1,0 +1,359 @@
+/* detalles generales */
+body
+{
+  background-color: black;
+  color: red;
+  text-align: center;
+  width: 970px;
+  font-family: Arial, sans-serif;
+  margin: 0px auto;
+  padding: 0 1em 1em 1em;
+}
+
+/* Los enlaces en amarillo y con un subrayado discontinuo verde lima*/
+a
+{
+  color: yellow;
+  text-decoration: none;
+  border-bottom: thin dashed lime;
+}
+
+/* y que cambie de color cuando te pongas encima */
+a:hover
+{
+  color: fuchsia;
+  border-bottom: none;
+  font-size: 1.2em;
+
+}
+
+/* y los enlaces para cambiar de idioma */
+.eng a
+{
+  border: none;
+  background: url(../imagenes/UK32.png) no-repeat center;
+}
+.fra a
+{
+  border: none;
+  background: url(../imagenes/France32.png) no-repeat center;
+}
+.esp a
+{
+  border: none;
+  background: url(../imagenes/Spain32.png) no-repeat center;
+}
+.eng a:hover, .fra a:hover, .esp a:hover
+{
+  font-size: 1em;
+}
+
+/* Justficamos el texto de todos los parrafos de texto,
+   le damos espacio al principio y un poco de interlineado. */
+#a1, #a2, #a3, #c1, #c2, #d1, #d2
+{
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.5em;
+}
+/* El b1 es la excepción */
+#b1
+{
+  text-align: left;
+  line-height: 1.5em;
+}
+
+/* para respetar los espacios en blanco del logo y titulo */
+h1, h2
+{
+  white-space: pre;
+}
+
+/* Para el color del titular */
+h2
+{
+  color: yellow;
+}
+
+/* ponemos las iniciales el doble de grandes */
+.inic
+{
+  font: bold 2em Arial, sans-serif;
+}
+
+/* Centramos el pié y los titulos */
+h1, h2, h3, #pie
+{
+  text-align: center;
+}
+
+/* arreglamos el texto del pie */
+#pie
+{
+  font: bold 1.5em Times new roman;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+}
+ 
+/* Fijamos anchura y altura para las cajas principales */
+#cabecera
+{
+  width: 970px;
+  height: 185px;
+}
+
+#cuerpo
+{
+  width: 970px;
+  height: 1900px;
+}
+
+#pie
+{
+  width: 970px;
+  height: 50px;
+}
+
+/* Pintamos la línea que antes haciamos con <hr>*/
+#logo
+{
+  border-bottom: 2px solid red;
+}
+
+/* A la caja grupo que contiene los comienzos y las grabaciones
+así como algunas fotos de la época, le ponemos una de las fotos de fondo */
+#grupo
+{
+  position: relative;
+  width: 970px;
+  height: 580px;
+  background-image: url("../imagenes/srchinarro93funclub1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+}
+
+/* Fijamos un padding para las cuatro secciones */
+#comienzos, #grabaciones, #cine, #actualidad
+{
+  padding: 1em;
+}
+
+/* la primera sección la colocamos a la izquierda dentro de la caja grupo
+y le damos una anchura moderada para que quepa a su lado la segunda sección */
+#comienzos
+{
+  width: 380px;
+  float: left;
+}
+
+/* La 2ª sección a la derecha */
+#grabaciones
+{
+  width: 525px;
+  float: right;
+}
+
+/* La 3ª sección como versa de otro tema (cine), la separamos 
+un poco más por arriba y debajo que por los lados */
+#cine
+{
+  margin: 5em 1em 2em;
+  float: left;
+}
+
+/* Esta es quizas la caja más curiosa ya que he intentado simular 
+un trozo de película de cine.
+Primero la caja contorno simulando los bordes de la película. */
+#fotogramas
+{
+  width: 900px;
+  height: 276px;
+  border-style: dashed;
+  border-width: 2em .2em;
+  border-color: #000; 
+  background-color: grey;
+  position: relative;
+}
+/* Aquí los cuatro marcos donde se insertaran los fotogramas */
+#marco1, #marco2, #marco3, #marco4
+{
+  height: 220px;
+  border: 7px solid #000;
+  border-left: none;
+}
+
+/* Uno a uno los vamos colocando a la derecha del anterior,
+teniendo sumo cuidado con el tamaño para que quepan exactamente */
+#marco1
+{
+  width: 60px;
+  float: left;
+}
+
+#marco2
+{
+  width: 325px;
+  float: left;
+}
+
+#marco3
+{
+  width: 325px;
+  float: left;
+}
+
+#marco4
+{
+  width: 168px;
+  float: left;
+  border-right: none;
+}
+
+/* Debajo colocamos la caja que contendrá el texto */
+#letreros
+{
+  margin: 1em;
+  width: 95%;
+  float: left;
+}
+
+/* Para finalizar con las secciones, la 4ª */
+#actualidad
+{
+  float: left;
+  margin: 2em 4em;
+  border-color: olive;
+}
+
+/* A los parrafos de las dos primeras secciones le damos 
+el mismo aspecto ya que están juntos. */
+#a1, #a2, #a3, #b1
+{
+  font-size: .95em;
+  font-weight: 600;
+  color: black;
+  border: 2px dashed yellow;
+  padding: 0.6em 1em;
+}  
+
+/* A las 4 fotos que vamos a poner en el grupo (sec 1 y 2)
+le ponemos borde */
+#f1, #f2, #f3, #f4
+{
+  border: 2px solid #000;
+}
+
+/* Con la posición absoluta las vamos colocando en el lugar
+más adecuado. Con z-index superponemos la que más nos interese. */
+#f1
+{
+  position: absolute;
+  top: 250px;
+  left: 560px;
+  z-index: 40;
+}
+
+#f2
+{
+  position: absolute;
+  top: 280px;
+  left: 500px;
+  z-index: 30;
+}
+
+#f3
+{
+  position: absolute;
+  top: 410px;
+  left: 560px;
+  z-index: 20;
+}
+
+#f4
+{
+  position: absolute;
+  top: 320px;
+  left: 720px;
+  z-index: 10;
+}
+
+/* Aquí colocamos los fotogramas en su sitio */
+#fg1
+{
+  position: absolute;
+  top: 10px;
+  left;
+}
+
+#fg2
+{
+  position: absolute;
+  top: 10px;
+  left;
+}
+
+#fg3
+{
+  position: absolute;
+  top: 10px;
+  left;
+}
+
+#fg4
+{
+  position: absolute;
+  top: 10px;
+  left;
+}
+
+/* Fijamos anchura y altura para los párrafos de texto 
+para que nos quepan uno al lado del otro. */
+#c1
+{
+  width: 380px;
+  height: 100px;
+  float: left;
+}
+
+#c2
+{
+  width: 380px;
+  height: 100px;
+  float: right;
+}
+
+/* Colocamos ahora los tres párrafos de la última sección,
+sabiendo que el primero (d0) es una foto y va a la izquierda
+y los otros dos son texto y van a la derecha */
+#d0, #d1, #d2
+{
+  border: .3em solid olive;
+  padding: 1.6em 3em;
+}
+
+#d0
+{
+  width: 260px;
+  height: 335px;
+  padding: 0;
+  float: left;
+}
+/* Ponemos la foto del mismo tamaño que la caja para que se ajuste perfectamente */
+#actualidad img
+{
+  width: 260px;
+  height: 335px;
+}
+
+#d1
+{
+  width: 350px;
+  float: right;
+}
+
+#d2
+{
+  width: 350px;
+  float: right;
+}
